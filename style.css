@@ -1,0 +1,198 @@
+:root {
+    --kolor1: #7c3aed;
+    --kolor2: #06b6d4;
+}
+
+body {
+    background-color: #0f0f12;
+    color: #f3f4f6;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+/* NAWIGACJA  */
+
+.navbar {
+    background-color: #050507 !important;
+    border-bottom: 2px solid var(--kolor1);
+    padding: 0.8rem 0;
+}
+
+.navbar-brand {
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #f3f4f6 !important;
+}
+
+.navbar-brand span {
+    color: var(--kolor2);
+}
+
+.nav-link {
+    color: #9ca3af !important;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--kolor2) !important;
+}
+
+/* HAMBURGER */
+
+.navbar-toggler {
+    border-color: var(--kolor1) !important;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.25rem rgba(124, 58, 237, 0.5) !important;
+}
+
+/* -- */
+
+.card {
+    background-color: #18181c;
+    border: 1px solid #27272a;
+    color: #f3f4f6;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: var(--kolor1);
+}
+
+.btn-custom-primary {
+    background-color: var(--kolor1);
+    color: white;
+    border: none;
+}
+
+.btn-custom-primary:hover {
+    background-color: #6d28d9;
+    color: white;
+}
+
+.btn-custom-secondary {
+    background-color: transparent;
+    color: var(--kolor2);
+    border: 2px solid var(--kolor2);
+}
+
+.btn-custom-secondary:hover {
+    background-color: var(--kolor2);
+    color: #000;
+}
+
+.table-custom {
+    color: #f3f4f6 !important;
+}
+
+.table-custom th {
+    background-color: var(--kolor1) !important;
+    color: white;
+}
+
+.table-custom td {
+    background-color: #18181c !important;
+    border-color: #27272a;
+    color: white;
+}
+
+.accordion-item {
+    background-color: #18181c !important;
+    color: #f3f4f6 !important;
+    border: 1px solid #27272a !important;
+}
+
+.accordion-button {
+    background-color: #18181c !important;
+    color: #f3f4f6 !important;
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--kolor2) !important;
+    box-shadow: none !important;
+}
+
+footer {
+    background-color: #050507;
+    border-top: 1px solid #27272a;
+    color: #9ca3af;
+}
+
+.badge {
+    background-color:var(--kolor1);
+}
+
+/* FILTRY */
+
+.game-item {
+    display: block !important;
+}
+
+.games-container:has(#roguelike:checked) .game-item:not(.roguelike) {
+    display: none !important;
+}
+
+.games-container:has(#metroidvania:checked) .game-item:not(.metroidvania) {
+    display: none !important;
+}
+
+.games-container:has(#all:checked) label[for="all"],
+.games-container:has(#roguelike:checked) label[for="roguelike"],
+.games-container:has(#metroidvania:checked) label[for="metroidvania"] {
+    background-color: #7c3aed !important; 
+    border-color: #7c3aed !important;
+    color: #ffffff !important;
+}
+
+/* HAMBURGER */
+
+@media (max-width: 991.98px) {
+    
+    
+    body {
+        padding-top: 75px !important;
+    }
+
+    
+    .navbar {
+        background-color: #050507 !important;
+        border-bottom: 2px solid var(--kolor1) !important;
+        padding: 10px 0 !important;
+    }
+
+    
+    .navbar-toggler {
+        border: 1px solid rgba(255, 255, 255, 0.2) !important;
+        padding: 6px 12px !important;
+    }
+
+    
+    .navbar-collapse {
+        background-color: #050507 !important;
+        border: 1px solid #27272a;
+        border-radius: 8px;
+        padding: 15px;
+        margin-top: 12px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+    }
+    
+    
+    .nav-item {
+        padding: 6px 0;
+        text-align: center;
+    }
+}
+
+
+body {
+    padding-top: 85px;
+}

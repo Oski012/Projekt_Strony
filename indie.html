@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gry Niezależne - DlaGracza</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+
+    <header class="fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            
+            <a class="navbar-brand" href="index.html">DLA<span>GRACZA</span></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Przełącz nawigację">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Główna</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nowosci.html">Nowości</a></li>
+                    <li class="nav-item"><a class="nav-link" href="promocje.html">Promocje</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="indie.html">Gry Indie</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </header>
+
+    <!-- MAIN -->
+
+    <main class="container my-5">
+        <section class="text-center mb-5">
+            <h1 class="fw-bold">Gry Niezależne (Indie)</h1>
+            <p class="text-secondary">Odkryj niezwykłe gry z mniejszym budżetem, które według nas zasługują na uwagę</p>
+        </section>
+        
+    <div class="row justify-content-center games-container">
+            
+            
+            <div class="col-12 col-lg-10 mb-4">
+                <div class="d-flex flex-wrap gap-2 align-items-center">
+                    <p class="text-secondary fw-bold mb-0 me-2">Filtruj:</p>
+
+                    <input type="radio" name="filter" id="all" checked class="d-none">
+                    <label for="all" class="btn btn-outline-light">Wszystkie</label>
+
+                    <input type="radio" name="filter" id="roguelike" class="d-none">
+                    <label for="roguelike" class="btn btn-outline-light">Roguelike</label>
+
+                    <input type="radio" name="filter" id="metroidvania" class="d-none">
+                    <label for="metroidvania" class="btn btn-outline-light">Metroidvania</label>
+                </div>
+            </div>
+            
+            
+            <article class="col-12 col-lg-10 bg-card p-4 mb-4 rounded border border-secondary game-item roguelike" style="background-color: #18181c;">
+                <div class="row align-items-center">
+                    <div class="col-md-4 text-center">
+                        <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1145350/91ac334a2c137d08968ccc0bc474a02579602100/header.jpg?t=1765831644" class="img-fluid rounded" alt="Hades II">
+                        <h2 class="h4 fw-bold mt-3 mb-1">Hades II</h2>
+                        <span class="badge" >Roguelike</span>
+                    </div>
+                    <div class="col-md-8 mt-3 mt-md-0">
+                        <p>
+                            Znakomity powrót do podziemnego świata greckich mitów. Druga część serii Hades rozwija dynamiczny system walki, wprowadzając zupełnie nowe mechaniki magiczne. Gra zachwyca nie tylko płynnością rozgrywki, ale również głębią narracji, która sprawia, że każda kolejna porażka w podziemiach jest tylko początkiem nowej przygody. Ocena: <strong>9/10</strong>.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            
+            <article class="col-12 col-lg-10 bg-card p-4 mb-4 rounded border border-secondary game-item metroidvania" style="background-color: #18181c;">
+                <div class="row align-items-center">
+                    <div class="col-md-4 text-center">
+                        <img src="https://store-images.s-microsoft.com/image/apps.27593.13915115277924383.908d7241-5347-4cf0-bdcd-16003ceb2e82.744e3014-b5f8-417e-968c-26e2ba5d43ad?q=90&w=480&h=270" class="img-fluid rounded" alt="Silksong">
+                        <h2 class="h4 fw-bold mt-3 mb-1">Hollow Knight: Silksong</h2>
+                        <span class="badge" >Metroidvania</span>
+                    </div>
+                    <div class="col-md-8 mt-3 mt-md-0">
+                        <p>
+                            Silksong to mistrzowskie rozwinięcie formuły znanej z pierwowzoru. Tym razem wcielamy się w Hornet, która oferuje zupełnie inny styl poruszania się i walki. Poziom trudności jest niezwykle wyśrubowany, ale satysfakcja z pokonania kolejnych bossów jest wręcz nieporównywalna z żadnym innym tytułem z gatunku metroidvania. Pozycja obowiązkowa. Ocena: <strong>10/10</strong>.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="col-12 col-lg-10 bg-card p-4 mb-4 rounded border border-secondary game-item roguelike" style="background-color: #18181c;">
+                <div class="row align-items-center">
+                    <div class="col-md-4 text-center">
+                        <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2738490/d505392564204d87cd762d2cdfbd8dd30af8cfdc/header.jpg?t=1778606524" class="img-fluid rounded" alt="Sol Cesto">
+                        <h2 class="h4 fw-bold mt-3 mb-1">Sol Cesto</h2>
+                        <span class="badge">Rougelike</span>
+                    </div>
+                    <div class="col-md-8 mt-3 mt-md-0">
+                        <p>
+                            Sol Cesto to dynamiczna, taktyczna gra z gatunku roguelite, w której trzeba zapanować nad własnym szczęściem. Wybierz bohatera i zejdź na sam dół generowanych podziemi. W tym ponurym świecie każda decyzja ma nieodwracalne konsekwencje... Ocena: <strong>8/10</strong>.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="col-12 col-lg-10 bg-card p-4 mb-4 rounded border border-secondary game-item metroidvania" style="background-color: #18181c;">
+                <div class="row align-items-center">
+                    <div class="col-md-4 text-center">
+                        <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/312520/capsule_616x353.jpg?t=1772227582" class="img-fluid rounded" alt="Rain World">
+                        <h2 class="h4 fw-bold mt-3 mb-1">Rain World</h2>
+                        <span class="badge" >Metroidvania</span>
+                    </div>
+                    <div class="col-md-8 mt-3 mt-md-0">
+                        <p>
+                            Rain World to unikalna gra survivalowa, w której wcielasz się w „slugcata” (hybrydę kota i ślimaka). Twoim zadaniem jest eksploracja opuszczonego, zalanego świata i zdobywanie pożywienia, aby przetrwać niszczycielskie ulewy. Jest ona bardzo trudna ale też niezwykle wciągająca.  Ocena: <strong>8,5/10</strong>.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer class="py-4 text-center mt-auto">
+        <div class="container">
+            <p class="mb-1">&copy; 2026 DlaGracza Portal. Wszelkie prawa zastrzeżone.</p>
+            <p class="small text-secondary">Projekt strony o grach komputerowych wykonany w celach nauki.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
